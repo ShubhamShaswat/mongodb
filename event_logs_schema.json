@@ -1,0 +1,24 @@
+{
+    "_id": "65f03e12f3a398d22c6f32d4",
+    "co_id": "65f03e12f3a398d22c6f32d2",
+    "type": "DB_TRIGGER",
+    "domainId": "65e9a8bcd7e7508c300633cf",
+    "appId": "65e9a8bcd7e7508c300633ce",
+    "groupId": "65e765dd60ff2a3ed75fe112",
+    "domain_id_hash": 565886849,
+    "location": "US-VA",
+    "started": "2024-03-12T11:35:46.883+00:00",
+    "completed": "2024-03-12T11:35:46.885+00:00",
+    "function_id": "65ead681bbb5e62ef0689093",
+    "function_name": "Atlas_Triggers_testTrigger_1710243014",
+    "has_error": false,
+    "event_subscription_id": "65ead689ad52dc3b708ce9ec",
+    "event_subscription_name": "testTrigger",
+    "messages": [
+        "New Docuemnt Inserted/ Document Deleted/ Document Updated",
+        "action to perform",
+        "_id",
+        "date"
+    ],
+    "mem_time_usage": 1426313
+}

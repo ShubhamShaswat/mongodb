@@ -1,0 +1,22 @@
+# query based on date parameter
+
+{applicabilityStartDate:{$gte:ISODate("2023-01-01"),$lt:ISODate("2023-05-01")}}
+
+
+# query for both projectId and date parameter
+query = {
+    "$and": [
+        {"projectId": 2},
+        {"applicabilityStartDate": {"$gt": ISODate("2023-01-01")}},
+        {"applicabilityStartDate": {"$lt": ISODate("2023-05-01")}}
+    ]
+}
+
+[
+    {"$match": {"projectId": 2}},  # Filter documents where projectId is 2
+    {"$match": {"createdAt": {"$gt": datetime(2023, 3, 30)}}},  # Filter createdAt greater than '2023-03-30'
+    {"$match": {"createdAt": {"$lt": datetime(2023, 5, 30)}}},  # Filter createdAt less than '2023-05-30'
+    {"$unionWith": {"coll": "collection1"}},  # Union with collection1
+    {"$unionWith": {"coll": "collection2"}},  # Union with collection2
+    {"$unionWith": {"coll": "collection3"}}   # Union with collection3
+]

@@ -1,0 +1,34 @@
+{
+    "eventId": 1,
+    "timestamp": 2024-03-13T09:15:23,
+    "actor": "User",
+    "eventType": "Login",
+    "target": "System",
+    "payload": {"userID": "user123", "additionalField": ""},
+    "environment": "Production Environment",
+    "metadata": {"severity": "info"},
+    "status: "Success",
+    "error": null,
+    "eventOrigin": "Authentication Service"
+}
+
+
+eventId: A unique identifier for each event.
+timestamp: Date and time when the event occurred.
+actor: Identifies the entity or component that initiated the event.
+eventType: Describes the action or behavior that triggered the event.
+target: Identifies the entity or component affected by the event.
+payload: Additional data associated with the event.
+environment: Information about the environment in which the event occurred (e.g., system state, location).
+metadata: Any additional metadata relevant to the event (e.g., event severity, event source).
+status: Indicates the outcome or result of the event.
+error: If applicable, details about any errors or exceptions encountered.
+eventOrigin: indicates where the event originated within the system (e.g., module, service).
+
+Values associated with Fields examples:
+
+actor : ["user", "system"]
+eventType : ["Login", "Logout", "projectAdded", "projectDeleted", "supportingDocsAdded"]
+target : ["system", "user", "database"]
+environment: ["Production Environment", "Dev Environment"]
+eventOrigin; ["Authentication Service", "Project Management Service", "Documents Management Service"]
