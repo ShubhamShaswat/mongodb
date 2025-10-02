@@ -8,11 +8,10 @@ import pymongo
 # a valid username and password! Note that in a production environment,
 # you should not store your password in plain-text here.
 
-
 def connect_to_mongo_client():
     """ "connect to mongodb client"""
     username = urllib.parse.quote_plus("shubhamshaswat")
-    password = urllib.parse.quote_plus("")
+    password = urllib.parse.quote_plus("@.4WX.2bhcn!HED")
 
     CONNECTION_STRING = f"mongodb+srv://{username}:{password}@dmrv-serverlessinstance.bpclcvt.mongodb.net/?retryWrites=true&w=majority&appName=DMRV-ServerlessInstance"
     client = MongoClient(CONNECTION_STRING)
